@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MY R.O.N. beauty studio — salon krásy Plzeň | nehty, vlasy, řasy, obočí</title>
+<meta name="description" content="Salon krásy MY R.O.N. na Skvrňanské 18 v Plzni. Manikúra, pedikúra, prodloužení nehtů, vlasy, prodloužení a laminace řas, obočí a make-up. Otevřeno každý den 8:00–20:00. Mluvíme česky a ukrajinsky.">
+<meta name="theme-color" content="#08080a">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/logo.jpg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MY R.O.N. beauty studio — salon krásy Plzeň">
+<meta property="og:description" content="Nehty, vlasy, řasy, obočí a make-up. Skvrňanská 18, Plzeň. Otevřeno Po–Ne 8:00–20:00.">
+<meta property="og:image" content="assets/img/g01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Prata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#sluzby" data-i18n="skip">Přejít na obsah</a>
+
+<!-- ── header ─────────────────────────────────────────────── -->
+<header class="masthead" id="masthead">
+  <a class="masthead__mark" href="#top" aria-label="MY R.O.N. beauty studio">
+    <img src="assets/img/logo.jpg" alt="" width="36" height="36">
+    <span>MY&nbsp;R.O.N.</span>
+  </a>
+
+  <nav class="masthead__nav" aria-label="Hlavní navigace">
+    <a href="#sluzby" data-i18n="nav.services">Služby</a>
+    <a href="#cenik" data-i18n="nav.prices">Ceník</a>
+    <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+    <a href="#tym" data-i18n="nav.team">Tým</a>
+    <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+  </nav>
+
+  <div class="masthead__end">
+    <div class="lang" role="group" aria-label="Jazyk / Мова">
+      <button type="button" class="lang__btn is-on" data-lang="cs" aria-pressed="true">CZ</button>
+      <span class="lang__sep" aria-hidden="true">/</span>
+      <button type="button" class="lang__btn" data-lang="uk" aria-pressed="false">UA</button>
+    </div>
+    <a class="btn btn--solid masthead__cta" href="https://n803349.alteg.io" target="_blank" rel="noopener" data-i18n="cta.book">Rezervovat</a>
+    <button type="button" class="burger" aria-expanded="false" aria-controls="drawer" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <a href="#sluzby" data-i18n="nav.services">Služby</a>
+  <a href="#cenik" data-i18n="nav.prices">Ceník</a>
+  <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+  <a href="#tym" data-i18n="nav.team">Tým</a>
+  <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+  <a class="btn btn--solid drawer__cta" href="https://n803349.alteg.io" target="_blank" rel="noopener" data-i18n="cta.bookTime">Rezervovat termín</a>
+</div>
+
+<main id="top">
+
+<!-- ── hero ───────────────────────────────────────────────── -->
+<section class="hero">
+  <svg class="hero__lamp" viewBox="0 0 1200 560" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0.6">
+        <stop offset="0%"   stop-color="#7d6a45"/>
+        <stop offset="20%"  stop-color="#dcd0b2"/>
+        <stop offset="38%"  stop-color="#f7f0de"/>
+        <stop offset="56%"  stop-color="#b8a37a"/>
+        <stop offset="76%"  stop-color="#f2e9d2"/>
+        <stop offset="100%" stop-color="#7d6a45"/>
+      </linearGradient>
+      <filter id="bloom" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur stdDeviation="14" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="b"/></feMerge>
+      </filter>
+    </defs>
+    <g class="hero__lampgroup">
+      <polygon class="hero__glow" points="196,26 1004,26 1174,280 1004,534 196,534 26,280"
+               fill="none" stroke="url(#metal)" stroke-width="7" filter="url(#bloom)"/>
+      <polygon class="hero__ring" points="196,26 1004,26 1174,280 1004,534 196,534 26,280"
+               fill="none" stroke="url(#metal)" stroke-width="1.4"/>
+      <polygon class="hero__ring hero__ring--inner" points="230,54 970,54 1112,280 970,506 230,506 88,280"
+               fill="none" stroke="url(#metal)" stroke-width="0.7"/>
+    </g>
+  </svg>
+
+  <div class="hero__body">
+    <p class="eyebrow" data-i18n="hero.where">Skvrňanská 18 · Plzeň</p>
+    <h1 class="wordmark"><span class="wordmark__my">MY</span> <span class="wordmark__ron">R.O.N.</span></h1>
+    <p class="hero__kind" data-i18n="hero.kind">beauty studio</p>
+    <p class="hero__lede" data-i18n="hero.lede">Nehty, vlasy, řasy, obočí a make-up — pět oborů, jeden salon.<br>Otevřeno každý den od 8:00 do 20:00.</p>
+    <div class="hero__acts">
+      <a class="btn btn--solid btn--lg" href="https://n803349.alteg.io" target="_blank" rel="noopener" data-i18n="cta.bookTime">Rezervovat termín</a>
+      <a class="btn btn--ghost btn--lg" href="#galerie" data-i18n="cta.seeWork">Prohlédnout práce</a>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__rail">
+      <span class="ticker__set" data-i18n="ticker">manikúra · pedikúra · prodloužení nehtů · gel lak · střih · barvení · prodloužení vlasů · prodloužení řas · laminace řas · laminace obočí · barvení obočí · make-up · účesy ·&nbsp;</span>
+      <span class="ticker__set" data-i18n="ticker">manikúra · pedikúra · prodloužení nehtů · gel lak · střih · barvení · prodloužení vlasů · prodloužení řas · laminace řas · laminace obočí · barvení obočí · make-up · účesy ·&nbsp;</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── services ───────────────────────────────────────────── -->
+<section class="band seam" id="sluzby">
+  <header class="band__head">
+    <p class="eyebrow" data-i18n="svc.eyebrow">Co u nás uděláme</p>
+    <h2 class="band__title" data-i18n="svc.title">Pět oborů pod jednou střechou</h2>
+  </header>
+
+  <div class="disc">
+    <article class="disc__row">
+      <figure class="disc__shot"><img src="assets/img/g05.jpg" alt="Dlouhé mandlové nehty v tmavě vínovém gel laku" loading="lazy" width="360" height="640"></figure>
+      <div class="disc__text">
+        <h3 class="disc__name" data-i18n="svc.nails.name">Nehty</h3>
+        <p class="disc__note" data-i18n="svc.nails.note">Přístrojová manikúra a pedikúra, gel lak, zpevnění gelem a prodloužení v délkách S, M a L.</p>
+        <ul class="tags">
+          <li data-i18n="svc.nails.t1">Přístrojová manikúra</li>
+          <li data-i18n="svc.nails.t2">Pedikúra</li>
+          <li data-i18n="svc.nails.t3">Gel lak</li>
+          <li data-i18n="svc.nails.t4">Zpevnění gelem</li>
+          <li data-i18n="svc.nails.t5">Prodloužení S · M · L</li>
+          <li data-i18n="svc.nails.t6">Nail art</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="disc__row disc__row--flip">
+      <figure class="disc__shot"><img src="assets/img/g08.jpg" alt="Dlouhé rovné vlasy s karamelovým přelivem" loading="lazy" width="360" height="640"></figure>
+      <div class="disc__text">
+        <h3 class="disc__name" data-i18n="svc.hair.name">Vlasy</h3>
+        <p class="disc__note" data-i18n="svc.hair.note">Střih, barvení, styling a prodloužení vlasů u kadeřnic z kategorie Top mistr.</p>
+        <ul class="tags">
+          <li data-i18n="svc.hair.t1">Střih</li>
+          <li data-i18n="svc.hair.t2">Barvení</li>
+          <li data-i18n="svc.hair.t3">Styling a foukaná</li>
+          <li data-i18n="svc.hair.t4">Prodloužení vlasů</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="disc__row">
+      <figure class="disc__shot"><img src="assets/img/g02.jpg" alt="Portrét klientky s večerním líčením a nalíčenýma očima" loading="lazy" width="360" height="640"></figure>
+      <div class="disc__text">
+        <h3 class="disc__name" data-i18n="svc.lash.name">Řasy</h3>
+        <p class="disc__note" data-i18n="svc.lash.note">Prodloužení a laminace u lashmakerek, které mají v rezervačním systému hodnocení 5,0.</p>
+        <ul class="tags">
+          <li data-i18n="svc.lash.t1">Prodloužení řas</li>
+          <li data-i18n="svc.lash.t2">Laminace řas</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="disc__row disc__row--flip">
+      <figure class="disc__shot"><img src="assets/img/g04.jpg" alt="Kosmetička upravuje obočí klientky v salonu" loading="lazy" width="360" height="640"></figure>
+      <div class="disc__text">
+        <h3 class="disc__name" data-i18n="svc.brow.name">Obočí</h3>
+        <p class="disc__note" data-i18n="svc.brow.note">Laminace, barvení a korekce tvaru — brows bar vede kosmetička Yuliia.</p>
+        <ul class="tags">
+          <li data-i18n="svc.brow.t1">Laminace obočí</li>
+          <li data-i18n="svc.brow.t2">Barvení obočí</li>
+          <li data-i18n="svc.brow.t3">Korekce tvaru</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="disc__row">
+      <figure class="disc__shot"><img src="assets/img/g09.jpg" alt="Klientka s večerním líčením a naondulovanými vlasy" loading="lazy" width="480" height="640"></figure>
+      <div class="disc__text">
+        <h3 class="disc__name" data-i18n="svc.mua.name">Make-up a účesy</h3>
+        <p class="disc__note" data-i18n="svc.mua.note">Denní i večerní líčení a společenské účesy — na focení, svatbu nebo večer, kdy chcete být vidět.</p>
+        <ul class="tags">
+          <li data-i18n="svc.mua.t1">Denní make-up</li>
+          <li data-i18n="svc.mua.t2">Večerní make-up</li>
+          <li data-i18n="svc.mua.t3">Společenský účes</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ── prices ─────────────────────────────────────────────── -->
+<section class="band seam" id="cenik">
+  <header class="band__head">
+    <p class="eyebrow" data-i18n="price.eyebrow">Ceník</p>
+    <h2 class="band__title" data-i18n="price.title">Cena podle mistra</h2>
+    <p class="band__lede" data-i18n="price.lede">Každý obor u nás vedou mistři ve dvou úrovních. Vyberete si úroveň, my odvedeme práci — u obou stejně pečlivě.</p>
+  </header>
+
+  <div class="tabs" role="tablist" aria-label="Obory">
+    <button type="button" class="tabs__btn is-on" role="tab" aria-selected="true"  aria-controls="p-nehty" id="t-nehty" data-i18n="tab.nails">Nehty</button>
+    <button type="button" class="tabs__btn"       role="tab" aria-selected="false" aria-controls="p-vlasy" id="t-vlasy" data-i18n="tab.hair">Vlasy</button>
+    <button type="button" class="tabs__btn"       role="tab" aria-selected="false" aria-controls="p-rasy"  id="t-rasy"  data-i18n="tab.lash">Řasy</button>
+    <button type="button" class="tabs__btn"       role="tab" aria-selected="false" aria-controls="p-oboci" id="t-oboci" data-i18n="tab.brow">Obočí</button>
+    <button type="button" class="tabs__btn"       role="tab" aria-selected="false" aria-controls="p-mua"   id="t-mua"   data-i18n="tab.mua">Make-up</button>
+  </div>
+
+  <div class="panel" id="p-nehty" role="tabpanel" aria-labelledby="t-nehty" tabindex="0">
+    <div class="menu">
+      <div class="menu__legend" aria-hidden="true">
+        <span class="menu__legendGap"></span>
+        <span data-i18n="price.tier1">Mistr</span>
+        <span data-i18n="price.tier2">Top mistr</span>
+      </div>
+
+      <dl class="menu__list">
+        <div class="menu__item">
+          <dt>Přístrojová manikúra</dt>
+          <dd><span class="menu__mob" data-i18n="price.tier1">Mistr</span>500 Kč</dd>
+          <dd><span class="menu__mob" data-i18n="price.tier2">Top mistr</span>600 Kč</dd>
+        </div>
+        <div class="menu__item">
+          <dt>Přístrojová manikúra + odstranění gelu</dt>
+          <dd><span class="menu__mob" data-i18n="price.tier1">Mistr</span>550 Kč</dd>
+          <dd><span class="menu__mob" data-i18n="price.tier2">Top mistr</span>700 Kč</dd>
+        </div>
+        <div class="menu__item">
+          <dt>Přístrojová manikúra + lak</dt>
+          <dd><span class="menu__mob" data-i18n="price.tier1">Mistr</span>600 Kč</dd>
+          <dd><span class="menu__mob" data-i18n="price.tier2">Top mistr</span>700 Kč</dd>
+        </div>
+        <div class="menu__item">
+          <dt>Přístrojová manikúra + gel lak</dt>
+          <dd><span class="menu__mob" data-i18n="price.tier1">Mistr</span>800 Kč</dd>
+          <dd><span class="menu__mob" data-i18n="price.tier2">Top mistr</span>900 Kč</dd>
+        </div>
+        <div class="menu__item">
+          <dt>Přístrojová manikúra + zpevnění gelem + gel lak</dt>
+          <dd><span class="menu__mob" data-i18n="price.tier1">Mistr</span>900 Kč</dd>
+          <dd><span class="menu__mob" data-i18n="price.tier2">Top mistr</span>1 000 Kč</dd>
+        </div>
+        <div class="menu__item">
+          <dt>Prodloužení nehtů — délka S</dt>
+          <dd><span class="menu__mob" data-i18n="price.tier1">Mistr</span>1 000 Kč</dd>
+          <dd><span class="menu__mob" data-i18n="price.tier2">Top mistr</span>1 200 Kč</dd>
+        </div>
+        <div class="menu__item">
+          <dt>Prodloužení nehtů — délka M</dt>
+          <dd><span class="menu__mob" data-i18n="price.tier1">Mistr</span>1 100 Kč</dd>
+          <dd><span class="menu__mob" data-i18n="price.tier2">Top mistr</span>1 300 Kč</dd>
+        </div>
+        <div class="menu__item">
+          <dt>Prodloužení nehtů — délka L</dt>
+          <dd><span class="menu__mob" data-i18n="price.tier1">Mistr</span>1 200 Kč</dd>
+          <dd><span class="menu__mob" data-i18n="price.tier2">Top mistr</span>1 500 Kč</dd>
+        </div>
+      </dl>
+      <p class="menu__foot" data-i18n="price.footNails">Pedikúru a nail art naceníme podle rozsahu — konkrétní cenu uvidíte při výběru termínu.</p>
+    </div>
+  </div>
+
+  <div class="panel" id="p-vlasy" role="tabpanel" aria-labelledby="t-vlasy" tabindex="0" hidden>
+    <div class="menu">
+      <dl class="menu__list menu__list--plain">
+        <div class="menu__item"><dt>Střih</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+        <div class="menu__item"><dt>Barvení</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+        <div class="menu__item"><dt>Styling a foukaná</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+        <div class="menu__item"><dt>Prodloužení vlasů</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+      </dl>
+      <p class="menu__foot" data-i18n="price.footOther">Cenu za konkrétní úkon a mistra uvidíte hned při výběru termínu.</p>
+      <a class="btn btn--ghost" href="https://n803349.alteg.io" target="_blank" rel="noopener" data-i18n="price.open">Otevřít rezervaci</a>
+    </div>
+  </div>
+
+  <div class="panel" id="p-rasy" role="tabpanel" aria-labelledby="t-rasy" tabindex="0" hidden>
+    <div class="menu">
+      <dl class="menu__list menu__list--plain">
+        <div class="menu__item"><dt>Prodloužení řas</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+        <div class="menu__item"><dt>Laminace řas</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+      </dl>
+      <p class="menu__foot" data-i18n="price.footOther">Cenu za konkrétní úkon a mistra uvidíte hned při výběru termínu.</p>
+      <a class="btn btn--ghost" href="https://n803349.alteg.io" target="_blank" rel="noopener" data-i18n="price.open">Otevřít rezervaci</a>
+    </div>
+  </div>
+
+  <div class="panel" id="p-oboci" role="tabpanel" aria-labelledby="t-oboci" tabindex="0" hidden>
+    <div class="menu">
+      <dl class="menu__list menu__list--plain">
+        <div class="menu__item"><dt>Laminace obočí</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+        <div class="menu__item"><dt>Barvení obočí</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+        <div class="menu__item"><dt>Korekce tvaru</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+      </dl>
+      <p class="menu__foot" data-i18n="price.footOther">Cenu za konkrétní úkon a mistra uvidíte hned při výběru termínu.</p>
+      <a class="btn btn--ghost" href="https://n803349.alteg.io" target="_blank" rel="noopener" data-i18n="price.open">Otevřít rezervaci</a>
+    </div>
+  </div>
+
+  <div class="panel" id="p-mua" role="tabpanel" aria-labelledby="t-mua" tabindex="0" hidden>
+    <div class="menu">
+      <dl class="menu__list menu__list--plain">
+        <div class="menu__item"><dt>Denní make-up</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+        <div class="menu__item"><dt>Večerní make-up</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+        <div class="menu__item"><dt>Společenský účes</dt><dd class="menu__ask" data-i18n="price.ask">podle délky a mistra</dd></div>
+      </dl>
+      <p class="menu__foot" data-i18n="price.footOther">Cenu za konkrétní úkon a mistra uvidíte hned při výběru termínu.</p>
+      <a class="btn btn--ghost" href="https://n803349.alteg.io" target="_blank" rel="noopener" data-i18n="price.open">Otevřít rezervaci</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── gallery ────────────────────────────────────────────── -->
+<section class="band seam" id="galerie">
+  <header class="band__head">
+    <p class="eyebrow" data-i18n="gal.eyebrow">Instagram</p>
+    <h2 class="band__title" data-i18n="gal.title">Naše práce</h2>
+  </header>
+
+  <div class="chips" role="group" aria-label="Filtr">
+    <button type="button" class="chips__btn is-on" data-filter="all"  aria-pressed="true"  data-i18n="gal.all">Vše</button>
+    <button type="button" class="chips__btn"       data-filter="nail" aria-pressed="false" data-i18n="tab.nails">Nehty</button>
+    <button type="button" class="chips__btn"       data-filter="hair" aria-pressed="false" data-i18n="tab.hair">Vlasy</button>
+    <button type="button" class="chips__btn"       data-filter="brow" aria-pressed="false" data-i18n="tab.brow">Obočí</button>
+    <button type="button" class="chips__btn"       data-filter="mua"  aria-pressed="false" data-i18n="tab.mua">Make-up</button>
+  </div>
+
+  <div class="grid" id="grid">
+    <figure class="grid__cell" data-cat="nail"><img src="assets/img/g01.jpg" alt="Světlé nehty s květinovým nail artem" loading="lazy" width="360" height="640"></figure>
+    <figure class="grid__cell" data-cat="hair"><img src="assets/img/g11.jpg" alt="Černé vlnité vlasy nastylované v salonu" loading="lazy" width="360" height="640"></figure>
+    <figure class="grid__cell" data-cat="nail"><img src="assets/img/g03.jpg" alt="Černé stiletto nehty s růžovou konturou" loading="lazy" width="360" height="640"></figure>
+    <figure class="grid__cell" data-cat="mua"><img src="assets/img/g10.jpg" alt="Detail líčení očí s růží ve vlasech" loading="lazy" width="360" height="640"></figure>
+    <figure class="grid__cell" data-cat="brow"><img src="assets/img/g04.jpg" alt="Úprava obočí v salonu" loading="lazy" width="360" height="640"></figure>
+    <figure class="grid__cell" data-cat="hair"><img src="assets/img/g06.jpg" alt="Dlouhé černé vlasy po ošetření" loading="lazy" width="360" height="640"></figure>
+    <figure class="grid__cell" data-cat="nail"><img src="assets/img/g12.jpg" alt="Zlaté nehty s červenou francouzskou špičkou" loading="lazy" width="360" height="640"></figure>
+    <figure class="grid__cell" data-cat="mua"><img src="assets/img/g09.jpg" alt="Klientka s večerním líčením a naondulovanými vlasy" loading="lazy" width="480" height="640"></figure>
+    <figure class="grid__cell" data-cat="nail"><img src="assets/img/g07.jpg" alt="Nude nehty s ručně malovanými květy" loading="lazy" width="360" height="640"></figure>
+    <figure class="grid__cell" data-cat="hair"><img src="assets/img/g08.jpg" alt="Dlouhé rovné vlasy s karamelovým přelivem" loading="lazy" width="360" height="640"></figure>
+    <figure class="grid__cell" data-cat="nail"><img src="assets/img/g05.jpg" alt="Mandlové nehty ve vínovém gel laku" loading="lazy" width="360" height="640"></figure>
+    <figure class="grid__cell" data-cat="mua"><img src="assets/img/g02.jpg" alt="Portrét klientky s večerním líčením" loading="lazy" width="360" height="640"></figure>
+  </div>
+
+  <p class="grid__foot">
+    <a href="https://www.instagram.com/myron.beautystudio_plzen/" target="_blank" rel="noopener">
+      @myron.beautystudio_plzen<span data-i18n="gal.followers"> — 7 600+ odběratelů na Instagramu</span>
+    </a>
+  </p>
+</section>
+
+<!-- ── team ───────────────────────────────────────────────── -->
+<section class="band seam" id="tym">
+  <header class="band__head">
+    <p class="eyebrow" data-i18n="team.eyebrow">Tým</p>
+    <h2 class="band__title" data-i18n="team.title">Mistři a Top mistři</h2>
+    <p class="band__lede" data-i18n="team.lede">Dvanáct mistrů ve čtyřech oborech. Hodnocení a počet recenzí pocházejí z našeho rezervačního systému.</p>
+  </header>
+
+  <ul class="crew">
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-mariana.png" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
+      <h3 class="crew__name">Mariana Fushtei</h3>
+      <p class="crew__job" data-i18n="job.hair">Kadeřnice</p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,99 <span class="crew__count">· 269 <span data-i18n="team.reviews">recenzí</span></span></p>
+    </li>
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-yuliia-r.png" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
+      <h3 class="crew__name">Yuliia Rozhkova</h3>
+      <p class="crew__job" data-i18n="job.hair">Kadeřnice</p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,78 <span class="crew__count">· 82 <span data-i18n="team.reviews">recenzí</span></span></p>
+    </li>
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-yuliia-p.png" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
+      <h3 class="crew__name">Yuliia Poliakova</h3>
+      <p class="crew__job" data-i18n="job.brow">Kosmetička · obočí a make-up</p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,94 <span class="crew__count">· 266 <span data-i18n="team.reviews">recenzí</span></span></p>
+    </li>
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-zlata.png" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
+      <h3 class="crew__name">Zlata Stepura</h3>
+      <p class="crew__job" data-i18n="job.lash">Lashmaker</p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>5,00 <span class="crew__count">· 117 <span data-i18n="team.reviews">recenzí</span></span></p>
+    </li>
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-violetta.jpg" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
+      <h3 class="crew__name">Violetta</h3>
+      <p class="crew__job" data-i18n="job.lash">Lashmaker</p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>5,00 <span class="crew__count">· 72 <span data-i18n="team.reviews">recenzí</span></span></p>
+    </li>
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-alina.jpg" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
+      <h3 class="crew__name">Alina Sharkevych</h3>
+      <p class="crew__job" data-i18n="job.nail">Manikúra a pedikúra</p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,98 <span class="crew__count">· 188 <span data-i18n="team.reviews">recenzí</span></span></p>
+    </li>
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-anhelina.png" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
+      <h3 class="crew__name">Anhelina Bohdanets</h3>
+      <p class="crew__job" data-i18n="job.nail">Manikúra a pedikúra</p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,98 <span class="crew__count">· 57 <span data-i18n="team.reviews">recenzí</span></span></p>
+    </li>
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-alona.png" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
+      <h3 class="crew__name">Alona Khutorianska</h3>
+      <p class="crew__job" data-i18n="job.nailOnly">Manikúra</p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,96 <span class="crew__count">· 120 <span data-i18n="team.reviews">recenzí</span></span></p>
+    </li>
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-anishoara.png" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.mistr">Mistr</p>
+      <h3 class="crew__name">Anishoara Popilian</h3>
+      <p class="crew__job" data-i18n="job.nailOnly">Manikúra</p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,97 <span class="crew__count">· 124 <span data-i18n="team.reviews">recenzí</span></span></p>
+    </li>
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-viktoriia.jpg" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.mistr">Mistr</p>
+      <h3 class="crew__name">Viktoriia Maior</h3>
+      <p class="crew__job" data-i18n="job.nail">Manikúra a pedikúra</p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,50 <span class="crew__count">· 6 <span data-i18n="team.reviews">recenzí</span></span></p>
+    </li>
+    <li class="crew__card">
+      <img class="crew__face" src="assets/img/team/m-anna.png" alt="" loading="lazy" width="110" height="110">
+      <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
+      <h3 class="crew__name">Anna Mykytenko</h3>
+      <p class="crew__job" data-i18n="job.nail">Manikúra a pedikúra</p>
+      <p class="crew__score crew__score--new" data-i18n="team.noReviews">zatím bez recenzí</p>
+    </li>
+    <li class="crew__card crew__card--plain">
+      <p class="crew__rank" data-i18n="rank.mistr">Mistr</p>
+      <h3 class="crew__name">Jarina Lemak</h3>
+      <p class="crew__job" data-i18n="job.nail">Manikúra a pedikúra</p>
+      <p class="crew__score crew__score--new" data-i18n="team.noReviews">zatím bez recenzí</p>
+    </li>
+  </ul>
+</section>
+
+<!-- ── contact ────────────────────────────────────────────── -->
+<section class="band seam" id="kontakt">
+  <div class="visit">
+    <div class="visit__side">
+      <p class="eyebrow" data-i18n="con.eyebrow">Kontakt</p>
+      <h2 class="band__title" data-i18n="con.title">Přijďte se podívat</h2>
+      <p class="band__lede" data-i18n="con.lede">Rezervace běží online 24 hodin denně. Vyberete si obor, mistra a čas — potvrzení dorazí hned.</p>
+      <div class="visit__acts">
+        <a class="btn btn--solid btn--lg" href="https://n803349.alteg.io" target="_blank" rel="noopener" data-i18n="cta.bookTime">Rezervovat termín</a>
+        <a class="btn btn--ghost btn--lg" href="https://www.instagram.com/myron.beautystudio_plzen/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+
+    <dl class="facts">
+      <div class="facts__row">
+        <dt data-i18n="con.addr">Adresa</dt>
+        <dd><a href="https://www.google.com/maps/search/?api=1&amp;query=MY+R.O.N.+beauty+studio+Skvr%C5%88ansk%C3%A1+18+Plze%C5%88" target="_blank" rel="noopener">Skvrňanská 18, Plzeň</a></dd>
+      </div>
+      <div class="facts__row">
+        <dt data-i18n="con.hours">Otevírací doba</dt>
+        <dd data-i18n="con.hoursVal">Pondělí – neděle, 8:00 – 20:00</dd>
+      </div>
+      <div class="facts__row">
+        <dt data-i18n="con.lang">Domluvíme se</dt>
+        <dd data-i18n="con.langVal">Česky · Українською</dd>
+      </div>
+      <div class="facts__row">
+        <dt data-i18n="con.booking">Rezervace</dt>
+        <dd><a href="https://n803349.alteg.io" target="_blank" rel="noopener">n803349.alteg.io</a></dd>
+      </div>
+      <div class="facts__row">
+        <dt data-i18n="con.shop">Shop</dt>
+        <dd><a href="https://www.instagram.com/wow_master_plzen/" target="_blank" rel="noopener">@wow_master_plzen</a></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer__mark">MY R.O.N. <span data-i18n="hero.kind">beauty studio</span></p>
+  <p class="footer__meta">Skvrňanská 18, Plzeň · <span data-i18n="con.hoursShort">Po–Ne 8:00–20:00</span></p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
