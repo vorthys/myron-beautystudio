@@ -21,39 +21,20 @@
 
     'hero.where': 'Skvrňanská 18 · Пльзень',
     'hero.kind': 'beauty studio',
-    'hero.lede': 'Нігті, волосся, вії, брови та макіяж — п’ять напрямів, один салон.<br>Відчинено щодня з 8:00 до 20:00.',
-    'ticker': 'манікюр · педикюр · нарощування нігтів · гель-лак · стрижка · фарбування · нарощування волосся · нарощування вій · ламінування вій · ламінування брів · фарбування брів · макіяж · зачіски ·&nbsp;',
+    'hero.lede': 'Нігті, волосся, вії, брови та макіяж.<br>Відчинено щодня 8:00–20:00.',
 
     'svc.eyebrow': 'Що ми робимо',
     'svc.title': 'П’ять напрямів під одним дахом',
     'svc.nails.name': 'Нігті',
-    'svc.nails.note': 'Апаратний манікюр і педикюр, гель-лак, укріплення гелем і нарощування довжини S, M та L.',
-    'svc.nails.t1': 'Апаратний манікюр',
-    'svc.nails.t2': 'Педикюр',
-    'svc.nails.t3': 'Гель-лак',
-    'svc.nails.t4': 'Укріплення гелем',
-    'svc.nails.t5': 'Нарощування S · M · L',
-    'svc.nails.t6': 'Nail art',
+    'svc.nails.list': 'Апаратний манікюр · Педикюр · Гель-лак · Укріплення гелем · Нарощування нігтів S, M, L · Nail art',
     'svc.hair.name': 'Волосся',
-    'svc.hair.note': 'Стрижка, фарбування, укладка й нарощування волосся у майстрів категорії Top mistr.',
-    'svc.hair.t1': 'Стрижка',
-    'svc.hair.t2': 'Фарбування',
-    'svc.hair.t3': 'Укладка',
-    'svc.hair.t4': 'Нарощування волосся',
+    'svc.hair.list': 'Стрижка · Фарбування · Укладка · Нарощування волосся',
     'svc.lash.name': 'Вії',
-    'svc.lash.note': 'Нарощування та ламінування у лешмейкерок з оцінкою 5,0 у системі записів.',
-    'svc.lash.t1': 'Нарощування вій',
-    'svc.lash.t2': 'Ламінування вій',
+    'svc.lash.list': 'Нарощування вій · Ламінування вій',
     'svc.brow.name': 'Брови',
-    'svc.brow.note': 'Ламінування, фарбування та корекція форми — brows bar веде косметолог Юлія.',
-    'svc.brow.t1': 'Ламінування брів',
-    'svc.brow.t2': 'Фарбування брів',
-    'svc.brow.t3': 'Корекція форми',
+    'svc.brow.list': 'Ламінування брів · Фарбування брів · Корекція форми',
     'svc.mua.name': 'Макіяж і зачіски',
-    'svc.mua.note': 'Денний і вечірній макіяж та святкові зачіски — на зйомку, весілля чи вечір, коли хочеться бути помітною.',
-    'svc.mua.t1': 'Денний макіяж',
-    'svc.mua.t2': 'Вечірній макіяж',
-    'svc.mua.t3': 'Святкова зачіска',
+    'svc.mua.list': 'Денний макіяж · Вечірній макіяж · Святкова зачіска',
 
     'price.eyebrow': 'Ціни',
     'price.title': 'Ціна залежить від майстра',
@@ -214,19 +195,10 @@
   if (!quiet && 'IntersectionObserver' in window) {
     /* .menu is left out on purpose — a hidden tab panel never intersects,
        so revealing it would lag every tab switch by the fade duration */
-    var risers = document.querySelectorAll(
-      '.band__head, .disc__row, .tabs, .chips, .visit__side, .facts'
+    var targets = document.querySelectorAll(
+      '.band__head, .disc__row, .grid__cell, .crew__card, .visit__side, .facts'
     );
-    /* these already carry a transform of their own — fade only */
-    var faders = document.querySelectorAll('.grid__cell, .crew__card');
-
-    risers.forEach(function (el) { el.classList.add('rise'); });
-    faders.forEach(function (el) { el.classList.add('fade'); });
-
-    var targets = [].concat(
-      Array.prototype.slice.call(risers),
-      Array.prototype.slice.call(faders)
-    );
+    targets.forEach(function (el) { el.classList.add('fade'); });
 
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -234,7 +206,7 @@
         entry.target.classList.add('is-in');
         io.unobserve(entry.target);
       });
-    }, { rootMargin: '0px 0px -12% 0px', threshold: .08 });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: .05 });
 
     targets.forEach(function (el) { io.observe(el); });
   }

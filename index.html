@@ -37,7 +37,7 @@
   </nav>
 
   <div class="masthead__end">
-    <div class="lang" role="group" aria-label="Jazyk / Мова">
+    <div class="lang lang--head" role="group" aria-label="Jazyk / Мова">
       <button type="button" class="lang__btn is-on" data-lang="cs" aria-pressed="true">CZ</button>
       <span class="lang__sep" aria-hidden="true">/</span>
       <button type="button" class="lang__btn" data-lang="uk" aria-pressed="false">UA</button>
@@ -55,53 +55,40 @@
   <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
   <a href="#tym" data-i18n="nav.team">Tým</a>
   <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
-  <a class="btn btn--solid drawer__cta" href="https://n803349.alteg.io" target="_blank" rel="noopener" data-i18n="cta.bookTime">Rezervovat termín</a>
+  <div class="lang lang--drawer" role="group" aria-label="Jazyk / Мова">
+    <button type="button" class="lang__btn is-on" data-lang="cs" aria-pressed="true">Česky</button>
+    <span class="lang__sep" aria-hidden="true">/</span>
+    <button type="button" class="lang__btn" data-lang="uk" aria-pressed="false">Українською</button>
+  </div>
 </div>
 
 <main id="top">
 
 <!-- ── hero ───────────────────────────────────────────────── -->
 <section class="hero">
-  <svg class="hero__lamp" viewBox="0 0 1200 560" aria-hidden="true" focusable="false">
-    <defs>
-      <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0.6">
-        <stop offset="0%"   stop-color="#7d6a45"/>
-        <stop offset="20%"  stop-color="#dcd0b2"/>
-        <stop offset="38%"  stop-color="#f7f0de"/>
-        <stop offset="56%"  stop-color="#b8a37a"/>
-        <stop offset="76%"  stop-color="#f2e9d2"/>
-        <stop offset="100%" stop-color="#7d6a45"/>
-      </linearGradient>
-      <filter id="bloom" x="-30%" y="-30%" width="160%" height="160%">
-        <feGaussianBlur stdDeviation="14" result="b"/>
-        <feMerge><feMergeNode in="b"/><feMergeNode in="b"/></feMerge>
-      </filter>
-    </defs>
-    <g class="hero__lampgroup">
-      <polygon class="hero__glow" points="196,26 1004,26 1174,280 1004,534 196,534 26,280"
-               fill="none" stroke="url(#metal)" stroke-width="7" filter="url(#bloom)"/>
-      <polygon class="hero__ring" points="196,26 1004,26 1174,280 1004,534 196,534 26,280"
-               fill="none" stroke="url(#metal)" stroke-width="1.4"/>
-      <polygon class="hero__ring hero__ring--inner" points="230,54 970,54 1112,280 970,506 230,506 88,280"
-               fill="none" stroke="url(#metal)" stroke-width="0.7"/>
-    </g>
-  </svg>
-
   <div class="hero__body">
+    <svg class="hero__lamp" viewBox="0 0 1200 560" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0.6">
+          <stop offset="0%"   stop-color="#7d6a45"/>
+          <stop offset="20%"  stop-color="#dcd0b2"/>
+          <stop offset="38%"  stop-color="#f7f0de"/>
+          <stop offset="56%"  stop-color="#b8a37a"/>
+          <stop offset="76%"  stop-color="#f2e9d2"/>
+          <stop offset="100%" stop-color="#7d6a45"/>
+        </linearGradient>
+      </defs>
+      <polygon class="hero__ring" points="196,26 1004,26 1174,280 1004,534 196,534 26,280"
+               fill="none" stroke="url(#metal)" stroke-width="1.2"/>
+    </svg>
+
     <p class="eyebrow" data-i18n="hero.where">Skvrňanská 18 · Plzeň</p>
     <h1 class="wordmark"><span class="wordmark__my">MY</span> <span class="wordmark__ron">R.O.N.</span></h1>
     <p class="hero__kind" data-i18n="hero.kind">beauty studio</p>
-    <p class="hero__lede" data-i18n="hero.lede">Nehty, vlasy, řasy, obočí a make-up — pět oborů, jeden salon.<br>Otevřeno každý den od 8:00 do 20:00.</p>
+    <p class="hero__lede" data-i18n="hero.lede">Nehty, vlasy, řasy, obočí a make-up.<br>Otevřeno každý den 8:00–20:00.</p>
     <div class="hero__acts">
       <a class="btn btn--solid btn--lg" href="https://n803349.alteg.io" target="_blank" rel="noopener" data-i18n="cta.bookTime">Rezervovat termín</a>
-      <a class="btn btn--ghost btn--lg" href="#galerie" data-i18n="cta.seeWork">Prohlédnout práce</a>
-    </div>
-  </div>
-
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker__rail">
-      <span class="ticker__set" data-i18n="ticker">manikúra · pedikúra · prodloužení nehtů · gel lak · střih · barvení · prodloužení vlasů · prodloužení řas · laminace řas · laminace obočí · barvení obočí · make-up · účesy ·&nbsp;</span>
-      <span class="ticker__set" data-i18n="ticker">manikúra · pedikúra · prodloužení nehtů · gel lak · střih · barvení · prodloužení vlasů · prodloužení řas · laminace řas · laminace obočí · barvení obočí · make-up · účesy ·&nbsp;</span>
+      <a class="link" href="#galerie" data-i18n="cta.seeWork">Prohlédnout práce</a>
     </div>
   </div>
 </section>
@@ -113,75 +100,28 @@
     <h2 class="band__title" data-i18n="svc.title">Pět oborů pod jednou střechou</h2>
   </header>
 
-  <div class="disc">
-    <article class="disc__row">
-      <figure class="disc__shot"><img src="assets/img/g05.jpg" alt="Dlouhé mandlové nehty v tmavě vínovém gel laku" loading="lazy" width="360" height="640"></figure>
-      <div class="disc__text">
-        <h3 class="disc__name" data-i18n="svc.nails.name">Nehty</h3>
-        <p class="disc__note" data-i18n="svc.nails.note">Přístrojová manikúra a pedikúra, gel lak, zpevnění gelem a prodloužení v délkách S, M a L.</p>
-        <ul class="tags">
-          <li data-i18n="svc.nails.t1">Přístrojová manikúra</li>
-          <li data-i18n="svc.nails.t2">Pedikúra</li>
-          <li data-i18n="svc.nails.t3">Gel lak</li>
-          <li data-i18n="svc.nails.t4">Zpevnění gelem</li>
-          <li data-i18n="svc.nails.t5">Prodloužení S · M · L</li>
-          <li data-i18n="svc.nails.t6">Nail art</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="disc__row disc__row--flip">
-      <figure class="disc__shot"><img src="assets/img/g08.jpg" alt="Dlouhé rovné vlasy s karamelovým přelivem" loading="lazy" width="360" height="640"></figure>
-      <div class="disc__text">
-        <h3 class="disc__name" data-i18n="svc.hair.name">Vlasy</h3>
-        <p class="disc__note" data-i18n="svc.hair.note">Střih, barvení, styling a prodloužení vlasů u kadeřnic z kategorie Top mistr.</p>
-        <ul class="tags">
-          <li data-i18n="svc.hair.t1">Střih</li>
-          <li data-i18n="svc.hair.t2">Barvení</li>
-          <li data-i18n="svc.hair.t3">Styling a foukaná</li>
-          <li data-i18n="svc.hair.t4">Prodloužení vlasů</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="disc__row">
-      <figure class="disc__shot"><img src="assets/img/g02.jpg" alt="Portrét klientky s večerním líčením a nalíčenýma očima" loading="lazy" width="360" height="640"></figure>
-      <div class="disc__text">
-        <h3 class="disc__name" data-i18n="svc.lash.name">Řasy</h3>
-        <p class="disc__note" data-i18n="svc.lash.note">Prodloužení a laminace u lashmakerek, které mají v rezervačním systému hodnocení 5,0.</p>
-        <ul class="tags">
-          <li data-i18n="svc.lash.t1">Prodloužení řas</li>
-          <li data-i18n="svc.lash.t2">Laminace řas</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="disc__row disc__row--flip">
-      <figure class="disc__shot"><img src="assets/img/g04.jpg" alt="Kosmetička upravuje obočí klientky v salonu" loading="lazy" width="360" height="640"></figure>
-      <div class="disc__text">
-        <h3 class="disc__name" data-i18n="svc.brow.name">Obočí</h3>
-        <p class="disc__note" data-i18n="svc.brow.note">Laminace, barvení a korekce tvaru — brows bar vede kosmetička Yuliia.</p>
-        <ul class="tags">
-          <li data-i18n="svc.brow.t1">Laminace obočí</li>
-          <li data-i18n="svc.brow.t2">Barvení obočí</li>
-          <li data-i18n="svc.brow.t3">Korekce tvaru</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="disc__row">
-      <figure class="disc__shot"><img src="assets/img/g09.jpg" alt="Klientka s večerním líčením a naondulovanými vlasy" loading="lazy" width="480" height="640"></figure>
-      <div class="disc__text">
-        <h3 class="disc__name" data-i18n="svc.mua.name">Make-up a účesy</h3>
-        <p class="disc__note" data-i18n="svc.mua.note">Denní i večerní líčení a společenské účesy — na focení, svatbu nebo večer, kdy chcete být vidět.</p>
-        <ul class="tags">
-          <li data-i18n="svc.mua.t1">Denní make-up</li>
-          <li data-i18n="svc.mua.t2">Večerní make-up</li>
-          <li data-i18n="svc.mua.t3">Společenský účes</li>
-        </ul>
-      </div>
-    </article>
-  </div>
+  <dl class="disc">
+    <div class="disc__row">
+      <dt class="disc__name" data-i18n="svc.nails.name">Nehty</dt>
+      <dd class="disc__list" data-i18n="svc.nails.list">Přístrojová manikúra · Pedikúra · Gel lak · Zpevnění gelem · Prodloužení nehtů S, M, L · Nail art</dd>
+    </div>
+    <div class="disc__row">
+      <dt class="disc__name" data-i18n="svc.hair.name">Vlasy</dt>
+      <dd class="disc__list" data-i18n="svc.hair.list">Střih · Barvení · Styling a foukaná · Prodloužení vlasů</dd>
+    </div>
+    <div class="disc__row">
+      <dt class="disc__name" data-i18n="svc.lash.name">Řasy</dt>
+      <dd class="disc__list" data-i18n="svc.lash.list">Prodloužení řas · Laminace řas</dd>
+    </div>
+    <div class="disc__row">
+      <dt class="disc__name" data-i18n="svc.brow.name">Obočí</dt>
+      <dd class="disc__list" data-i18n="svc.brow.list">Laminace obočí · Barvení obočí · Korekce tvaru</dd>
+    </div>
+    <div class="disc__row">
+      <dt class="disc__name" data-i18n="svc.mua.name">Make-up a účesy</dt>
+      <dd class="disc__list" data-i18n="svc.mua.list">Denní make-up · Večerní make-up · Společenský účes</dd>
+    </div>
+  </dl>
 </section>
 
 <!-- ── prices ─────────────────────────────────────────────── -->
@@ -354,70 +294,70 @@
       <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
       <h3 class="crew__name">Mariana Fushtei</h3>
       <p class="crew__job" data-i18n="job.hair">Kadeřnice</p>
-      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,99 <span class="crew__count">· 269 <span data-i18n="team.reviews">recenzí</span></span></p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,99 <span class="crew__count">269 <span data-i18n="team.reviews">recenzí</span></span></p>
     </li>
     <li class="crew__card">
       <img class="crew__face" src="assets/img/team/m-yuliia-r.png" alt="" loading="lazy" width="110" height="110">
       <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
       <h3 class="crew__name">Yuliia Rozhkova</h3>
       <p class="crew__job" data-i18n="job.hair">Kadeřnice</p>
-      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,78 <span class="crew__count">· 82 <span data-i18n="team.reviews">recenzí</span></span></p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,78 <span class="crew__count">82 <span data-i18n="team.reviews">recenzí</span></span></p>
     </li>
     <li class="crew__card">
       <img class="crew__face" src="assets/img/team/m-yuliia-p.png" alt="" loading="lazy" width="110" height="110">
       <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
       <h3 class="crew__name">Yuliia Poliakova</h3>
       <p class="crew__job" data-i18n="job.brow">Kosmetička · obočí a make-up</p>
-      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,94 <span class="crew__count">· 266 <span data-i18n="team.reviews">recenzí</span></span></p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,94 <span class="crew__count">266 <span data-i18n="team.reviews">recenzí</span></span></p>
     </li>
     <li class="crew__card">
       <img class="crew__face" src="assets/img/team/m-zlata.png" alt="" loading="lazy" width="110" height="110">
       <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
       <h3 class="crew__name">Zlata Stepura</h3>
       <p class="crew__job" data-i18n="job.lash">Lashmaker</p>
-      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>5,00 <span class="crew__count">· 117 <span data-i18n="team.reviews">recenzí</span></span></p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>5,00 <span class="crew__count">117 <span data-i18n="team.reviews">recenzí</span></span></p>
     </li>
     <li class="crew__card">
       <img class="crew__face" src="assets/img/team/m-violetta.jpg" alt="" loading="lazy" width="110" height="110">
       <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
       <h3 class="crew__name">Violetta</h3>
       <p class="crew__job" data-i18n="job.lash">Lashmaker</p>
-      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>5,00 <span class="crew__count">· 72 <span data-i18n="team.reviews">recenzí</span></span></p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>5,00 <span class="crew__count">72 <span data-i18n="team.reviews">recenzí</span></span></p>
     </li>
     <li class="crew__card">
       <img class="crew__face" src="assets/img/team/m-alina.jpg" alt="" loading="lazy" width="110" height="110">
       <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
       <h3 class="crew__name">Alina Sharkevych</h3>
       <p class="crew__job" data-i18n="job.nail">Manikúra a pedikúra</p>
-      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,98 <span class="crew__count">· 188 <span data-i18n="team.reviews">recenzí</span></span></p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,98 <span class="crew__count">188 <span data-i18n="team.reviews">recenzí</span></span></p>
     </li>
     <li class="crew__card">
       <img class="crew__face" src="assets/img/team/m-anhelina.png" alt="" loading="lazy" width="110" height="110">
       <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
       <h3 class="crew__name">Anhelina Bohdanets</h3>
       <p class="crew__job" data-i18n="job.nail">Manikúra a pedikúra</p>
-      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,98 <span class="crew__count">· 57 <span data-i18n="team.reviews">recenzí</span></span></p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,98 <span class="crew__count">57 <span data-i18n="team.reviews">recenzí</span></span></p>
     </li>
     <li class="crew__card">
       <img class="crew__face" src="assets/img/team/m-alona.png" alt="" loading="lazy" width="110" height="110">
       <p class="crew__rank" data-i18n="rank.top">Top mistr</p>
       <h3 class="crew__name">Alona Khutorianska</h3>
       <p class="crew__job" data-i18n="job.nailOnly">Manikúra</p>
-      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,96 <span class="crew__count">· 120 <span data-i18n="team.reviews">recenzí</span></span></p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,96 <span class="crew__count">120 <span data-i18n="team.reviews">recenzí</span></span></p>
     </li>
     <li class="crew__card">
       <img class="crew__face" src="assets/img/team/m-anishoara.png" alt="" loading="lazy" width="110" height="110">
       <p class="crew__rank" data-i18n="rank.mistr">Mistr</p>
       <h3 class="crew__name">Anishoara Popilian</h3>
       <p class="crew__job" data-i18n="job.nailOnly">Manikúra</p>
-      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,97 <span class="crew__count">· 124 <span data-i18n="team.reviews">recenzí</span></span></p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,97 <span class="crew__count">124 <span data-i18n="team.reviews">recenzí</span></span></p>
     </li>
     <li class="crew__card">
       <img class="crew__face" src="assets/img/team/m-viktoriia.jpg" alt="" loading="lazy" width="110" height="110">
       <p class="crew__rank" data-i18n="rank.mistr">Mistr</p>
       <h3 class="crew__name">Viktoriia Maior</h3>
       <p class="crew__job" data-i18n="job.nail">Manikúra a pedikúra</p>
-      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,50 <span class="crew__count">· 6 <span data-i18n="team.reviews">recenzí</span></span></p>
+      <p class="crew__score"><span class="crew__star" aria-hidden="true">★</span>4,50 <span class="crew__count">6 <span data-i18n="team.reviews">recenzí</span></span></p>
     </li>
     <li class="crew__card">
       <img class="crew__face" src="assets/img/team/m-anna.png" alt="" loading="lazy" width="110" height="110">

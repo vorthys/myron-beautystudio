@@ -22,13 +22,16 @@ Paleta vychází z loga salonu — černý lak a šampaňský kov monogramu:
 
 Písma: **Prata** (nadpisy, Cyrilice i latinka s diakritikou) + **Jost** (text, UI, ceny).
 
-Dva motivy jsou převzaté přímo z interiéru salonu:
-
-- **šestiúhelníkové svítidlo** v hero sekci — stejný tvar jako kruhová světla nad křesly,
-- **diagonální spára** mezi sekcemi — echo obkladu na stěně.
+Jediná ozdoba na celé stránce je **šestiúhelníkové svítidlo** v hero sekci — stejný tvar
+jako kruhová světla nad křesly v salonu. Vykreslí se jednou při načtení a pak už se
+nehýbe. Všechno ostatní jsou vlasové linky, prázdný prostor a fotky.
 
 Ceník je postavený na skutečné struktuře salonu: každá služba má cenu pro **Mistra**
 a pro **Top mistra**.
+
+Layout je psaný mobile-first — základ je telefon, media queries jen rozšiřují.
+Sekce Služby je čistě typografická, takže veškeré fotky nese galerie a na telefonu
+není potřeba proscrollovat pět obrázků, než se člověk dostane k cenám.
 
 ## Obsah
 
